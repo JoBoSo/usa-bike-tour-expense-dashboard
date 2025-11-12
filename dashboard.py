@@ -1,0 +1,86 @@
+from dash import Dash, dcc, html
+from expense_map import expense_map_fig
+from expense_table import expense_table
+from daily_expenses_bar_chart import daily_expenses_bar_chart_fig
+from expense_category_total_bubble_chart import expense_category_bubble_chart_fig
+from store_type_total_bubble_chart import store_type_total_bubble_chart_fig
+
+app = Dash()
+
+app.layout = html.Div(
+    className='dashboard',
+    children=[
+
+        html.Div(
+            className='dashboard-title',
+            children='Western USA Bike Tour Expenses Dashboard'
+        ),
+
+        html.Div(
+            className='explanation',
+            children='I biked 4,737 kilometers from the Rocky Mountains to the Sonoran Desert across in 39 days. This dashboard visualizes my expenses along the way.'
+        ),
+
+        # Expense Map
+        html.Div(
+            className='expense-map-container',
+            children=[
+                html.Div(className='default-fig-title', children='Expense Map'),
+                html.Div(
+                    className='expense-map',
+                    children=dcc.Graph(figure=expense_map_fig),
+                )
+            ]
+        ),
+
+        # Expense Table
+        html.Div(
+            className='expense-table-container',
+            children=[
+                html.Div(className='default-fig-title', children='Expenses'),
+                html.Div(
+                    className='expense-table',
+                    children=expense_table,
+                ),
+            ]
+        ),
+    
+        # Daily Expenses Bar Chart
+        html.Div(
+            className='daily-expenses-bar-chart-container',
+            children=[
+                html.Div(className='default-fig-title', children='Daily Expenses'),
+                html.Div(
+                    className='daily-expenses-bar-chart',
+                    children=dcc.Graph(figure=daily_expenses_bar_chart_fig),
+                ),
+            ]
+        ),
+
+        # Expense Category Bubble Chart
+        html.Div(
+            className='category-bubble-chart-container',
+            children=[
+                html.Div(className='default-fig-title', children='Total Expenses by Category'),
+                html.Div(
+                    className='category-bubble-chart',
+                    children=dcc.Graph(figure=expense_category_bubble_chart_fig),
+                ),
+            ]
+        ),
+        
+        # html.Div(
+        #     style={
+        #         'display': 'flex',
+        #         'justifyContent': 'center',
+        #         'alignItems': 'center', 
+        #         'border': '2px solid #000',
+        #     },
+        #     children=dcc.Graph(figure=store_type_total_bubble_chart_fig),
+        # ),
+        
+    ]
+)
+
+if __name__ == '__main__':
+    app.run(debug=True)

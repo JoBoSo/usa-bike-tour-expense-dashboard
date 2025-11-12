@@ -1,0 +1,216 @@
+date,time,cost_cad,category,store_name,store_type,city,state,country,latitude,longitude
+2025-09-17,07:00:00,168,cash,null,null,null,null,null,null,null
+2025-09-17,08:17:00,157,travel insurance,Pacific Blue Cross,insurance,null,null,null,null,null
+2025-09-17,13:29:00,5.25,food and drink,Village Social,cafe,Canal Flats,BC,CA,50.1568770453769,-115.810294848193
+2025-09-17,16:42:00,4.99,food and drink,Wasa Lake Gas & Food,convenience store,Wasa,BC,CA,49.7906286689306,-115.747259836455
+2025-09-18,10:14:00,30.6,food and drink,Shell,convenience store,Jaffray,BC,CA,49.3761067241411,-115.298155817568
+2025-09-18,15:41:00,8.31,border entrance fee,U.S. Customs and Border Protection,port of entry,Roosville,MT,US,48.9985229337928,-115.056944419442
+2025-09-18,16:05:00,42.46,food and drink,Watson's Market,grocery store,Eureka,MT,US,48.9016712451011,-115.056280705954
+2025-09-18,17:28:00,17.27,food and drink,Tacos4Ever,restaurant,Eureka,MT,US,48.8869184510407,-115.053283249181
+2025-09-19,11:43:00,2.2,food and drink,McDonald’s,restaurant,Whitefish,MT,US,48.3962405977117,-114.334747004144
+2025-09-19,12:17:00,12.45,bike maintenance,Glacier Cyclery & Nordic,bike shop,Whitefish,MT,US,48.4108933092691,-114.338967246473
+2025-09-19,15:53:00,24.94,food and drink,Ranger Joe’s Pizza,restaurant,Kalispell,MT,US,48.1825387878533,-114.3044694195
+2025-09-19,18:48:00,7.99,food and drink,Blacktail Grocery,grocery store,Lakeside,MT,US,48.0173638838743,-114.225681213972
+2025-09-20,12:35:00,4.5,food and drink,Starbucks,cafe,Polson,MT,US,47.6939981889819,-114.147188763646
+2025-09-20,13:22:00,16.62,food and drink,Burrito Brothers,restaurant,Polson,MT,US,47.6900908612444,-114.125221419836
+2025-09-20,14:48:00,3.45,food and drink,McDonald’s,restaurant,Polson,MT,US,47.6960719734511,-114.126827425496
+2025-09-20,21:27:00,33.16,food and drink,Exxon,convenience store,Missoula,MT,US,46.9592089702448,-114.13290869221
+2025-09-21,08:56:00,58.6,food and drink,Walmart,supercenter,Missoula,MT,US,46.887940089765,-114.041519156321
+2025-09-21,10:22:00,4.71,food and drink,Lighthouse Espresso,cafe,Missoula,MT,US,46.8799487490956,-114.017895573451
+2025-09-21,12:36:00,36.03,food and drink,Tandem Bakery & Cafe,restaurant,Missoula,MT,US,46.8599979939923,-113.988713141676
+2025-09-21,15:04:00,1.37,food and drink,Clinton Market,convenience store,Clinton,MT,US,46.7775422932356,-113.709930761928
+2025-09-21,18:15:00,10.77,food and drink,Conoco,convenience store,Drummond,MT,US,46.6651960896036,-113.140608288925
+2025-09-21,20:57:00,37.38,camping,Bernie and Sharon's Riverfront RV Park,campground,Garrison,MT,US,46.5192232801267,-112.7954708601
+2025-09-22,15:04:00,16.9,food and drink,El Salero,restaurant,Helena,MT,US,46.6001636739952,-112.0465280466
+2025-09-22,16:34:00,15.23,food and drink,Old Salt Outpost,restaurant,Helena,MT,US,46.5908043647351,-112.037651061941
+2025-09-22,17:02:00,55.38,bike maintenance,Big Sky Cycling,bike shop,Helena,MT,US,46.5954304444471,-112.033895361941
+2025-09-22,20:19:00,6.81,food and drink,Bob’s Supermarket,grocery store,Townsend,MT,US,46.3166187216884,-111.518302800596
+2025-09-22,20:30:00,14.23,shower,V42 Fitness,gym,Three Forks,MT,US,46.3243170618258,-111.524399192641
+2025-09-22,20:55:00,15.92,food and drink,Full Belli Deli,restaurant,Townsend,MT,US,46.3180957596506,-111.52007146196
+2025-09-23,04:53:00,47.53,food and drink,Walmart,supercenter,Bozeman,MT,US,45.6947812550298,-111.042776460156
+2025-09-23,15:55:00,5.2,food and drink,"The Shoppe Pastry, Coffeehouse & Deli",bakery,Three Forks,MT,US,45.8935340514939,-111.552058046648
+2025-09-23,21:38:00,21.16,food and drink,Spitz,restaurant,Bozeman,MT,US,45.6798500592424,-111.022812519674
+2025-09-23,23:00:00,53.91,camping,Bear Canyon Campground,campground,Bozeman,MT,US,45.6515998633729,-110.946092715983
+2025-09-24,12:11:00,3.68,food and drink,Starbucks,cafe,Livingston,MT,US,45.6431124832427,-110.574665835017
+2025-09-24,18:41:00,7.15,food and drink,Sinclair,convenience store,Gardiner,MT,US,45.0621581946165,-110.76164667164
+2025-09-24,19:05:00,21.47,food and drink,Ridley’s Family Markets,grocery store,Gardiner,MT,US,45.0348441536522,-110.710756804376
+2025-09-24,19:50:00,68.71,food and drink,Albertsons,grocery store,Livingston,MT,US,45.6424015883319,-110.575706146665
+2025-09-24,21:00:00,34.62,camping,Mammoth Campground,campground,Yellowstone National Park,WY,US,44.9765103143219,-110.69407410438
+2025-09-25,10:29:00,5.94,food and drink,Sinclair,convenience store,Yellowstone National Park,WY,US,44.9756714230809,-110.703611768912
+2025-09-25,19:40:00,16.12,camping,Madison Campground,campground,Yellowstone National Park,WY,US,44.6460706027,-110.861282992346
+2025-09-25,19:51:00,5.97,food and drink,Madison Mercantile,convenience store,Yellowstone National Park,WY,US,44.6442858745354,-110.862012180649
+2025-09-26,12:00:00,12.58,food and drink,Old Faithful General Store,convenience store,Yellowstone National Park,WY,US,44.4570784048458,-110.827933977426
+2025-09-26,18:11:00,65.11,food and drink,Colter Bay Grocery Store,grocery store,Moran,WY,US,43.90503963114,-110.64124378911
+2025-09-27,12:05:00,8.33,food and drink,Snake River Roasting Company,cafe,Jackson,WY,US,43.4797875909017,-110.763087973797
+2025-09-27,13:15:00,3.89,food and drink,McDonald’s,restaurant,Jackson,WY,US,43.4735082163359,-110.786879646809
+2025-09-27,15:47:00,2.7,food and drink,Phillips 66,convenience store,Alpine,WY,US,43.1729072849477,-111.017729831488
+2025-09-27,16:49:00,27.34,food and drink,Broulin’s Fresh Foods,convenience store,Alpine,WY,US,43.1721743861648,-111.0164263862
+2025-09-27,19:00:00,23.73,camping,Star Valley Ranch RV Park,campground,Thayne,WY,US,42.9679122354488,-110.972171146842
+2025-09-28,09:25:00,3.6,food and drink,Maverik,convenience store,Thayne,WY,US,42.9177061557624,-111.001756804515
+2025-09-28,11:05:00,3.6,food and drink,Maverik,convenience store,Afton,WY,US,42.7257574123553,-110.932767848704
+2025-09-28,17:24:00,23.7,food and drink,Domino’s,restaurant,Montpelier,UT,US,42.3174269682886,-111.307000718048
+2025-09-29,09:47:00,34.6,food and drink,Bear Lake Market,convenience store,Garden City,UT,US,41.9470358089665,-111.393951954293
+2025-09-29,16:34:00,9.91,food and drink,Wonder Tea and Sweet,cafe,Logan,UT,US,41.7316809970518,-111.835493675755
+2025-09-29,16:51:00,31.61,food and drink,Romo's Mediterranean Grill,restaurant,Logan,UT,US,41.7439996475046,-111.835000918084
+2025-09-29,17:25:00,16.48,bike maintenance,SPEEDMountain,bike shop,Logan,UT,US,41.7400128885017,-111.837719533425
+2025-09-29,17:58:00,1.43,food and drink,Wellcome Mart,convenience store,Wellsville,UT,US,41.6446034730113,-111.915193762267
+2025-09-29,20:06:00,50.75,food and drink,Smith’s,grocery store,Brigham City,UT,US,41.5080229944875,-112.016892562275
+2025-09-30,10:59:00,4.01,food and drink,Starbucks,cafe,Roy,UT,US,41.1915051449149,-112.046851797017
+2025-09-30,12:54:00,19.44,food and drink,Taqueria la Loteria Restaurant,restaurant,Roy,UT,US,41.168222298282,-112.025078049222
+2025-09-30,13:36:00,7.4,bike maintenance,Bingham Cyclery,bike shop,Sunset,UT,US,41.147649256296,-112.026389760451
+2025-09-30,14:42:00,24.96,food and drink,Taqueria la Loteria,restaurant,Layton,UT,US,41.0614536081658,-111.944980651401
+2025-09-30,17:00:00,77.83,lodging,SLC Hostel,hostel,Salt Lake City,UT,US,40.7517965678293,-111.895123262322
+2025-09-30,21:21:00,11.07,food and drink,7-Eleven,convenience store,Salt Lake City,UT,US,40.7532362620605,-111.893736784861
+2025-09-30,21:41:00,18.23,food and drink,Tacos Don Rafa,restaurant,Salt Lake City,UT,US,40.7525405975539,-111.888426289311
+2025-09-30,22:01:00,13.6,food and drink,Toro Tacos,restaurant,Salt Lake City,UT,US,40.7524193329187,-111.88859277397
+2025-10-01,09:02:00,7.6,food and drink,Roots Coffee & Co.,cafe,Salt Lake City,UT,US,40.7526916819484,-111.900195519992
+2025-10-01,11:25:00,20.86,food and drink,Good Food Gluten Free Bakery,bakery,Salt Lake City,UT,US,40.7518557952809,-111.903738918146
+2025-10-01,15:48:00,21.22,food and drink,Mo' Bettahs Hawaiian Style Food,restaurant,Lehi,UT,US,40.4311952875405,-111.897289893023
+2025-10-01,16:21:00,44.7,food and drink,Smith’s,grocery store,Lehi,UT,US,40.4297584400172,-111.824547404671
+2025-10-01,16:24:00,12.02,bike maintenance,Bike Peddler,bike shop,Lehi,UT,US,40.4328891008402,-111.895646933506
+2025-10-01,20:59:00,27.28,food and drink,Mo' Bettahs Hawaiian Style Food,restaurant,Spanish Fork,UT,US,40.1219107167039,-111.654105600997
+2025-10-02,08:10:00,4,food and drink,Chevron,convenience store,Spanish Fork,UT,US,40.0869116510258,-111.593571259096
+2025-10-02,14:53:00,4.11,food and drink,Chevron,convenience store,Soldier Summit,UT,US,39.9289223000123,-111.07924607402
+2025-10-02,18:53:00,31.61,food and drink,Angel's Craving,restaurant,Helper,UT,US,39.6917451656015,-110.856708504716
+2025-10-02,19:45:00,11.93,food and drink,Walmart,supercenter,Price,UT,US,39.5967232600106,-110.789061389381
+2025-10-02,21:00:00,31.24,camping,Nine Mile Rv Resort,campground,Wellington,UT,US,39.5421933911645,-110.730072447054
+2025-10-03,09:32:00,12.37,food and drink,The Coyotes Well,cafe,Wellington,UT,US,39.5423752226714,-110.735821331714
+2025-10-03,09:43:00,28.82,food and drink,Jilbertos Mexican Food,restaurant,Wellington,UT,US,39.5421968757908,-110.715254762395
+2025-10-03,10:22:00,3.68,food and drink,Chevron,convenience store,Wellington,UT,US,39.5430547418579,-110.688853189384
+2025-10-03,18:27:00,3.6,food and drink,Love’s,convenience store,Green River,UT,US,38.9954588782627,-110.185016574075
+2025-10-03,18:59:00,31.18,food and drink,Melon Vine Food Store,grocery store,Green River,UT,US,38.9947465342804,-110.165525760581
+2025-10-03,20:10:00,47.44,food and drink,Tacos La Pasadita,restaurant,Green River,UT,US,38.996157043223,-110.159528604757
+2025-10-04,09:58:00,5.35,food and drink,Swell Coffee,cafe,Green River,UT,US,38.9933716609784,-110.141644951349
+2025-10-04,17:00:00,135.69,camping,Sun Outdoors Moab Downtown,campground,Moab,UT,US,38.5647855241001,-109.549306950805
+2025-10-04,19:20:00,36.92,food and drink,Tey’s Home made Mexican Food,restaurant,Moab,UT,US,38.5667369807175,-109.550254359329
+2025-10-04,19:31:00,66.56,food and drink,City Market,grocery store,Moab,UT,US,38.56726860068,-109.549221120123
+2025-10-05,08:06:00,3.35,food and drink,McDonald’s,restaurant,Moab,UT,US,38.5634592861699,-109.549729689442
+2025-10-05,09:15:00,27.67,food and drink,Giliberto's Mexican Taco Shop,restaurant,Moab,UT,US,38.5673623216007,-109.550911272254
+2025-10-05,10:01:00,18.29,bike maintenance,Moab Cyclery,bike shop,Moab,UT,US,38.5675504666615,-109.550320120123
+2025-10-05,11:18:00,5.77,food and drink,Horsethief Coffee,cafe,Moab,UT,US,38.592818356565,-109.563970804781
+2025-10-05,21:38:00,24.54,food and drink,Wrap it Up Mediterranean Food,restaurant,Moab,UT,US,38.5743919888472,-109.551885560606
+2025-10-06,06:42:00,3.75,food and drink,Maverik,convenience store,Moab,UT,US,38.559777129673,-109.541639813
+2025-10-06,08:54:00,91.88,food and drink,The Village Market,grocery store,Moab,UT,US,38.5622685531849,-109.549158404783
+2025-10-06,09:59:00,16.77,bike maintenance,Chile Pepper Bike Shop,bike shop,Moab,UT,US,38.5626310391574,-109.54863817467
+2025-10-06,10:35:00,2.33,food and drink,Maverik,convenience store,Moab,UT,US,38.559777129673,-109.541639813
+2025-10-06,10:55:00,22.13,food and drink,Giliberto's Mexican Taco Shop,restaurant,Moab,UT,US,38.5673623216007,-109.550911272254
+2025-10-06,11:21:00,137.21,bike maintenance,Rim Cyclery,bike shop,Moab,UT,US,38.5754245348849,-109.552151382055
+2025-10-06,19:17:00,48.04,camping,Mountain View RV Park and Campground,campground,Monticello,UT,US,37.8818059608268,-109.341763202976
+2025-10-06,19:55:00,33.24,food and drink,Blue Mountain Foods,grocery store,Monticello,UT,US,37.8731585853606,-109.343792255107
+2025-10-07,12:11:00,3.39,food and drink,Destination Awake,cafe,Blanding,UT,US,37.6243602307182,-109.477826791342
+2025-10-07,12:21:00,11.37,food and drink,Clark's Market,grocery store,Blanding,UT,US,37.6133241475311,-109.480035404837
+2025-10-07,12:54:00,21.04,food and drink,Yak’s Cafe,restaurant,Blanding,UT,US,37.6298514078539,-109.471235518331
+2025-10-07,14:58:00,7.7,food and drink,Cow Canyon Coffee,cafe,Bluff,UT,US,37.286472573402,-109.545561062526
+2025-10-07,20:52:00,3.09,food and drink,Chevron,convenience store,Monument Valley,UT,US,37.0098263474611,-110.203415360696
+2025-10-07,21:10:00,21.36,food and drink,Goulding's Grocery Store,grocery store,Monument Valley,UT,US,37.0101344873639,-110.205050358849
+2025-10-07,22:00:00,60.27,camping,Goulding's Resort RV & Campground,campground,Monument Valley,UT,US,37.0071517572133,-110.214499809134
+2025-10-08,08:17:00,12.01,food and drink,Goulding's Grocery Store,grocery store,Monument Valley,UT,US,37.0101344873639,-110.205050358849
+2025-10-08,08:23:00,5.12,food and drink,Chevron,convenience store,Monument Valley,UT,US,37.0098263474611,-110.203415360696
+2025-10-08,12:14:00,9.39,food and drink,Bashas’,grocery store,Kayenta,AZ,US,36.7097871939948,-110.251001016536
+2025-10-08,13:36:00,1.49,food and drink,McDonald’s,restaurant,Kayenta,AZ,US,36.7086125205883,-110.250526769415
+2025-10-08,16:31:00,2.94,food and drink,Shonto Marketplace,convenience store,Shonto,AZ,US,36.4603776530386,-110.692537904333
+2025-10-08,18:40:00,2.94,food and drink,Tonalea General Store,convenience store,Tonalea,AZ,US,36.3186595662939,-110.946708577921
+2025-10-08,21:53:00,23.74,food and drink,Pizza Edge,restaurant,Tuba City,AZ,US,36.1222633329727,-111.222745149097
+2025-10-08,23:00:00,38.59,camping,NavajoLand Tuba City R.V. Park,campground,Tuba City,AZ,US,36.1307853459188,-111.24204534725
+2025-10-09,10:14:00,16.63,food and drink,Bashas’,grocery store,Tuba City,AZ,US,36.1231417612013,-111.224057660745
+2025-10-09,21:31:00,37.57,food and drink,Gloria's Bakery,bakery,Flagstaff,AZ,US,35.2094425588371,-111.61289950497
+2025-10-09,22:09:00,9.13,shower,Flagstaff Aquaplex,gym,Flagstaff,AZ,US,35.2051566373686,-111.610522431959
+2025-10-10,10:54:00,4.15,food and drink,Starbucks,cafe,Flagstaff,AZ,US,35.2256441859781,-111.583339679006
+2025-10-10,13:09:00,15.61,food and drink,Domino’s,restaurant,Flagstaff,AZ,US,35.2119152154769,-111.609866926944
+2025-10-10,14:41:00,14.04,food and drink,Flagstaff Baking Co.,bakery,Flagstaff,AZ,US,35.1946927996753,-111.649463120312
+2025-10-10,15:00:00,153.2,lodging,Motel 6,motel,Flagstaff,AZ,US,35.1750755500068,-111.665583326336
+2025-10-10,15:24:00,12.5,food and drink,Asia Station,restaurant,Flagstaff,AZ,US,35.194727870013,-111.649763527698
+2025-10-10,16:02:00,190.12,bike maintenance,REI,outdoor store,Flagstaff,AZ,US,35.1913803247899,-111.645039828893
+2025-10-10,16:11:00,6.65,food and drink,Lund Canyon Coffee,cafe,Flagstaff,AZ,US,35.1914328288158,-111.643530042779
+2025-10-10,16:39:00,8.37,food and drink,Walmart,supercenter,Flagstaff,AZ,US,35.1773907186243,-111.664810850201
+2025-10-11,09:29:00,38.21,food and drink,Walmart,supercenter,Flagstaff,AZ,US,35.1773907186243,-111.664810850201
+2025-10-11,09:41:00,27.39,food and drink,Bashas’,grocery store,Flagstaff,AZ,US,35.1800692925267,-111.667285536358
+2025-10-11,18:49:00,2.13,food and drink,McDonald’s,restaurant,Sedona,AZ,US,34.8652239865527,-111.801870205011
+2025-10-11,20:08:00,24.79,food and drink,Safeway,grocery store,Cottonwood,AZ,US,34.7286702451271,-112.007863391101
+2025-10-11,21:00:00,40.22,camping,Dead Horse Ranch State Park,campground,Cottonwood,AZ,US,34.7540894911818,-112.021431858972
+2025-10-12,11:50:00,7.1,food and drink,Sedonuts,cafe,Cottonwood,AZ,US,34.7457198727486,-112.025884462666
+2025-10-12,13:39:00,4.12,food and drink,Chevron,convenience store,Camp Verde,AZ,US,34.6111708896692,-111.858007910894
+2025-10-12,14:35:00,39.37,food and drink,Bashas’,grocery store,Camp Verde,AZ,US,34.5672073295823,-111.864645868783
+2025-10-13,11:11:00,3.82,food and drink,Maverik,convenience store,Payson,AZ,US,34.2500400451935,-111.321780733856
+2025-10-13,11:53:00,18.56,food and drink,Walmart,supercenter,Payson,AZ,US,34.2443793004174,-111.325042618516
+2025-10-13,13:08:00,17.97,food and drink,Alfonso's Mexican Food,restaurant,Payson,AZ,US,34.2355226803811,-111.324007562692
+2025-10-13,20:41:00,40.19,food and drink,Bashas’,grocery store,Mesa,AZ,US,33.4404366593122,-111.630674739491
+2025-10-13,21:47:00,2.03,food and drink,Chevron,convenience store,Mesa,AZ,US,33.4420418729875,-111.632165920213
+2025-10-14,10:10:00,19.93,food and drink,Mickey D’s Cafe,restaurant,Apache Junction,AZ,US,33.4156269637568,-111.561405589723
+2025-10-14,12:21:00,3.98,food and drink,Starbucks,cafe,Apache Junction,AZ,US,33.4160862416401,-111.573798537935
+2025-10-14,14:01:00,4.15,food and drink,Chevron,convenience store,Queen Creek,AZ,US,33.1528211710844,-111.539463614461
+2025-10-14,16:23:00,33.46,food and drink,Safeway,grocery store,Coolidge,AZ,US,32.9765344804288,-111.518082989746
+2025-10-14,18:18:00,16.48,food and drink,Sabor a la Michoacana Neveria y Paleteria,restaurant,Coolidge,AZ,US,32.9765884825197,-111.518040074405
+2025-10-15,10:39:00,4.07,food and drink,Starbucks,cafe,Tuscon,AZ,US,32.3590451466807,-111.092411004883
+2025-10-15,14:12:00,26.46,food and drink,Sprouts Farmers Market,grocery store,Tuscon,AZ,US,32.3265239898426,-111.031522763204
+2025-10-15,14:42:00,26.05,food and drink,Jimmys Pita & Poke,restaurant,Tuscon,AZ,US,32.3238666567987,-111.042788688773
+2025-10-15,16:52:00,19.86,food and drink,Zeke's Pizza and Coffee,restaurant,Tuscon,AZ,US,32.2248540426186,-110.970854151822
+2025-10-15,18:00:00,128.15,lodging,Super Inn,motel,Tuscon,AZ,US,32.1811336202447,-110.954017644833
+2025-10-15,20:52:00,16.84,bike maintenance,Ajo Bikes,bike shop,Tuscon,AZ,US,32.1785960709844,-110.951369474444
+2025-10-15,21:05:00,17.14,food and drink,In-N-Out Burger,restaurant,Tuscon,AZ,US,32.182877068944,-110.931455166342
+2025-10-15,21:40:00,7.34,food and drink,Walmart,supercenter,Tuscon,AZ,US,32.1870902659362,-110.954017644833
+2025-10-15,21:48:00,18.35,food and drink,Kahu Hawaiian BBQ,restaurant,Tuscon,AZ,US,32.1840393497578,-110.947494513024
+2025-10-16,12:35:00,10,food and drink,Starbucks,cafe,Tuscon,AZ,US,null,null
+2025-10-16,13:37:00,14.93,food and drink,Domino’s,restaurant,Tuscon,AZ,US,32.1770654428552,-111.067743312927
+2025-10-16,17:07:00,1.54,food and drink,Circle K,convenience store,Tuscon,AZ,US,32.3419039004114,-111.088488367426
+2025-10-16,19:25:00,25.24,food and drink,Caravan Grill,restaurant,Tuscon,AZ,US,32.2586343488118,-110.927098103276
+2025-10-16,20:40:00,4.44,food and drink,In-N-Out Burger,restaurant,Tuscon,AZ,US,32.182877068944,-110.931455166342
+2025-10-16,22:48:00,2.18,food and drink,ARCO,convenience store,Tuscon,AZ,US,32.1804786897128,-110.955674865973
+2025-10-17,12:04:00,15.99,food and drink,Ajo Cafe,restaurant,Tuscon,AZ,US,32.1777860490783,-110.925271662797
+2025-10-17,13:48:00,51.79,food and drink,Walmart,supercenter,Tuscon,AZ,US,32.1096634805697,-110.769481754263
+2025-10-17,14:04:00,21.73,food and drink,Firehouse Subs,restaurant,Tuscon,AZ,US,32.0906498095864,-110.775255504432
+2025-10-17,18:33:00,11.75,food and drink,Sonoita Mini Market,convenience store,Sonoita,AZ,US,31.6790532192137,-110.656003816798
+2025-10-17,19:48:00,17.9,food and drink,Patagonia Market,convenience store,Patagonia,AZ,US,31.5416883160006,-110.753049505157
+2025-10-17,20:42:00,21.15,food and drink,Eliza Mexican Food,restaurant,Patagonia,AZ,US,31.5411396890782,-110.753392827884
+2025-10-18,11:13:00,41.43,food and drink,Gathering Grounds,restaurant,Patagonia,AZ,US,31.5400513648382,-110.753497220498
+2025-10-18,16:42:00,62.82,food and drink,Walmart,supercenter,Nogales,AZ,US,31.3611948956126,-110.932840878177
+2025-10-18,18:44:00,15.34,food and drink,Cocina La Ley,restaurant,Nogales,AZ,US,31.3539470164062,-110.931268747496
+2025-10-19,12:00:00,5.65,food and drink,Sonoita Mini Market,convenience store,Sonoita,AZ,US,31.6790532192137,-110.656003816798
+2025-10-19,15:35:00,10,food and drink,Starbucks,cafe,Tuscon,AZ,US,null,null
+2025-10-19,15:58:00,21.72,food and drink,Fry’s,grocery store,Tuscon,AZ,US,32.1111286134064,-110.774396780424
+2025-10-19,20:24:00,48.38,food and drink,In-N-Out Burger,restaurant,Tuscon,AZ,US,32.4149715003209,-110.939068881237
+2025-10-20,09:10:00,16.62,food and drink,Bashas’,grocery store,Tuscon,AZ,US,32.4833008638489,-110.920535620108
+2025-10-20,09:43:00,4.62,food and drink,Circle K,convenience store,Tuscon,AZ,US,32.4948446520247,-110.926775878121
+2025-10-20,10:29:00,19.97,food and drink,Rancheros Carniceria,restaurant,Tuscon,AZ,US,32.4991114513794,-110.925359378566
+2025-10-20,14:54:00,1.57,food and drink,Circle K,convenience store,Florence,AZ,US,33.029129270953,-111.386983285725
+2025-10-20,19:14:00,55.97,food and drink,In-N-Out Burger,restaurant,Mesa,AZ,US,33.3817281633747,-111.599713588655
+2025-10-21,09:39:00,19.95,food and drink,Mickey D’s Cafe,restaurant,Apache Junction,AZ,US,33.4156269637568,-111.561405589723
+2025-10-21,12:08:00,2.82,car wash,Power Car Wash,car wash,Mesa,AZ,US,33.4244886689358,-111.685100866993
+2025-10-21,14:43:00,22.85,food and drink,Saigon Bowl Restaurant,restaurant,Scottsdale,AZ,US,33.4582639034293,-105.025423819637
+2025-10-21,15:24:00,8.71,food and drink,Mochi Fresh Homemade Boba Milk Tea,cafe,Tempe,AZ,US,33.4582723311259,-111.907717498899
+2025-10-21,16:54:00,1.58,food and drink,Circle K,convenience store,Phoenix,AZ,US,33.4551580108926,-112.075658590428
+2025-10-21,17:03:00,18.46,food and drink,Tacos Los Vales,restaurant,Phoenix,AZ,US,33.4449409519115,-112.069064255373
+2025-10-21,17:06:00,204.97,lodging,Hotel San Carlos,hotel,Phoenix,AZ,US,33.4505538949162,-112.074077076911
+2025-10-21,19:10:00,9.15,thrift shop,Goodwill,thrift shop,Phoenix,AZ,US,33.4945078651406,-112.084314444022
+2025-10-21,23:38:00,20.76,food and drink,Tacos Los Vales,restaurant,Phoenix,AZ,US,33.4449409519115,-112.069064255373
+2025-10-22,11:00:00,2.36,food and drink,Circle K,convenience store,Phoenix,AZ,US,33.4551580108926,-112.075658590428
+2025-10-22,11:49:00,13.09,food and drink,A Bakeshop,bakery,Phoenix,AZ,US,33.4568674144841,-112.064927265472
+2025-10-22,13:10:00,15.41,food and drink,Tacos Calafia,restaurant,Phoenix,AZ,US,33.4573133635708,-112.064851286397
+2025-10-22,13:39:00,8.08,food and drink,Nami,bakery,Phoenix,AZ,US,33.469948177605,-112.065380961948
+2025-10-22,13:52:00,6.2,food and drink,Urban Cookies Bakeshop,bakery,Phoenix,AZ,US,33.4742376919624,-112.064930590193
+2025-10-22,16:47:00,20.87,food and drink,El Zaguan Bistro,restaurant,Phoenix,AZ,US,33.4495023048428,-112.074300162733
+2025-10-22,17:17:00,9.11,food and drink,Taco Bell,restaurant,Phoenix,AZ,US,33.4475952961158,-112.071066153303
+2025-10-22,17:46:00,11.02,movie theatre,AMC,movie theatre,Phoenix,AZ,US,33.454039254763,-112.069772185773
+2025-10-22,19:47:00,15.15,food and drink,Fry’s,grocery store,Phoenix,AZ,US,33.4478684912115,-112.072237182413
+2025-10-22,23:13:00,3.66,food and drink,Fry’s,grocery store,Phoenix,AZ,US,33.4478684912115,-112.072237182413
+2025-10-23,10:26:00,5.75,food and drink,Press Coffee,cafe,Phoenix,AZ,US,33.4496296281983,-112.071125720565
+2025-10-23,10:46:00,2.36,food and drink,Circle K,convenience store,Phoenix,AZ,US,33.4551580108926,-112.075658590428
+2025-10-23,12:48:00,72.29,transportation,WestJet,airline,Phoenix,AZ,US,33.4356855093279,-111.997768649034
+2025-10-23,13:10:00,235.03,transportation,WestJet,airline,Phoeniz,AZ,US,33.4356855093279,-111.997768649034
+2025-10-23,13:48:00,44.11,transportation,Uber,taxi,Phoenix,AZ,US,33.4505538949162,-112.074077076911
+2025-10-23,21:47:00,8.34,food and drink,Thai Thien Sub,restaurant,Calgary,AB,CA,51.0450313263972,-114.065693561622
+2025-10-23,22:07:00,46.92,lodging,HI Calgary City Centre,hostel,Calgary,AB,CA,51.046388169905,-114.052017903951
+2025-10-23,23:45:00,19.94,food and drink,Shawarmalicious,restaurant,Calgary,AB,CA,51.0379997034467,-114.071846461622
+2025-10-24,12:02:00,17.32,food and drink,Hearts Choices,restaurant,Calgary,AB,CA,51.0882225723358,-114.222770149316
+2025-10-24,12:07:00,7.73,food and drink,Bauer Meats,butcher,Calgary,AB,CA,51.0882225723358,-114.222770149316
+2025-10-24,12:25:00,15.75,food and drink,Kaboora Kabab,restaurant,Calgary,AB,CA,51.0882225723358,-114.222770149316
+2025-10-24,12:41:00,7.88,food and drink,Zen Boba House,cafe,Calgary,AB,CA,51.0882225723358,-114.222770149316
+2025-10-24,15:54:00,2.92,food and drink,Chiniki Gas Bar,convenience store,Morley,AB,CA,51.1461243105627,-114.844584603944
+2025-10-24,20:58:00,17.85,food and drink,Canmore Shawarma,restaurant,Canmore,AB,CA,51.0892552717261,-115.3495995923
+2025-10-24,21:30:00,7.97,food and drink,Dairy Queen,restaurant,Canmore,AB,CA,51.0958817338152,-115.357027332783
+2025-10-25,11:01:00,29.48,food and drink,IGA,grocery store,Banff,AB,CA,51.1793424232346,-115.571697732777
+2025-10-25,11:18:00,1.98,food and drink,McDonald’s,restaurant,Banff,BC,CA,51.175280424419,-115.570587003942
+2025-10-25,20:56:00,25.71,food and drink,Wildside Pizzeria,restaurant,Radium Hot Springs,BC,CA,50.6202291521027,-116.071199703983
+2025-10-25,20:58:00,13.6,food and drink,The Snack Bar,restaurant,Radium Hot Springs,BC,CA,50.6202291521027,-116.071199703983
+2025-10-25,21:31:00,2.23,food and drink,Shell,convenience store,Invermere,BC,CA,50.515243149434,-116.005800003991
+2025-10-25,22:47:00,9.44,food and drink,Dairy Queen,restaurant,Invermere,BC,CA,50.5146527712966,-116.02601334632

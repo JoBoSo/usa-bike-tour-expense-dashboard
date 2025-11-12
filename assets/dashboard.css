@@ -1,0 +1,95 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.dashboard {
+    background-color: #040c24;
+    font-family: 'Arial, sans-serif';
+    padding: 20px;
+}
+
+.dashboard-title {
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.explanation {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+.default-fig-title {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.expense-map-container {
+    border: 2px solid #ffffff;
+    border-radius: 7px;
+    margin: 20px 0px 20px 0px;
+}
+
+.expense-map-container .expense-map {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    /* border: 2px solid #ffffff; */
+    border-radius: 0px 0px 7px 7px;
+    overflow: hidden;
+}
+
+.expense-table-container {
+    border: 2px solid #ffffff;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 20px 0px 20px 0px;
+}
+
+.expense-table-container .expense-table {
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #ffffff;
+}
+
+.daily-expenses-bar-chart-container {
+    border: 2px solid #ffffff;
+    border-radius: 7px;
+    margin: 20px 0px 20px 0px;
+}
+
+.daily-expenses-bar-chart-container .daily-expenses-bar-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow: auto;
+}
+
+.category-bubble-chart-container {
+    border: 2px solid #ffffff;
+    border-radius: 7px;
+    margin: 20px 0px 20px 0px;
+}
+
+.category-bubble-chart-container .category-bubble-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow: auto;
+}
