@@ -78,6 +78,14 @@ app.layout = html.Div(
         #     },
         #     children=dcc.Graph(figure=store_type_total_bubble_chart_fig),
         # ),
+
+        html.Div(
+            className='footer-container',
+            children=html.A(
+                'Visit my website bigmoneybiking.com', 
+                href='https://www.bigmoneybiking.com', target='_blank'
+            )
+        )
         
     ]
 )
