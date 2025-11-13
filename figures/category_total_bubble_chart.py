@@ -3,6 +3,9 @@ import pandas as pd
 import polars as pl
 import plotly.graph_objects as go
 import dataframes as dfs
+import matplotlib.pyplot as plt
+import matplotlib.colors
+import numpy as np
 
 class BubbleChartPlotly:
     def __init__(self, labels, area, colors, bubble_spacing=10, plot_diameter=500):
@@ -116,37 +119,56 @@ def plot_bubble_chart_plotly(df, plot_diameter=500):
             color=df_bubbles['color'],     
             sizemode='diameter',
             opacity=0.9,
+            line=dict(
+                # width=0,
+                color='white'
+            ),
         ),
         # text=df_bubbles['size'].round(2).astype(str),
-        text=chart.area.astype(int).astype(str),
+        # text=chart.area.astype(int).astype(str),
+        # text=chart.labels.astype(str),
+        text=df[['label', 'size']]
+            .apply(lambda row: 
+                f"<b>{row['label']}</b><br>${row['size']:.0f}" 
+                if row['size'] > 300 else "", 
+                axis=1
+            ),
         textposition='middle center',
         textfont=dict(
-            size=np.clip(df_bubbles['size'] / df_bubbles['size'].max() * 20, 8, 22)
+            size=np.clip(df_bubbles['size']/350-(1.1*len(df_bubbles['label'])), 8, 24)#np.clip(70*(df_bubbles['size']/(df_bubbles['size'].max())-len(df_bubbles['label'])/300), 8, 22)
         ),
         hovertemplate=(
-            '<b>%{customdata[0]}</b><br>' + 
-            'Value: %{text}' +               
+            '<b>%{customdata[0]}</b><br>' +
+            '$%{customdata[1]:.0f}' +                          
             '<extra></extra>'               
         ),
-        customdata=df_bubbles[['label']],
+        hoverlabel=dict(
+            font=dict(
+                family="Poppins", 
+                size=14,
+                color="white" 
+            ),
+            bgcolor="black",
+            bordercolor="grey"
+        ),
+        customdata=df[['label', 'size']],
     ))
 
     fig.update_layout(
-        template='plotly_dark',
+        # template='plotly_dark',
         xaxis=dict(visible=False),
         yaxis=dict(visible=False),
-        margin=dict(l=0, r=0, t=40, b=0),
+        margin=dict(l=0, r=0, t=0, b=0),
         height=plot_diameter,
-        width=plot_diameter
+        width=plot_diameter,
+        paper_bgcolor='rgba(0,0,0,0)', 
+        plot_bgcolor='rgba(0,0,0,0)',
+        font_color='white',
+        font_family='Poppins',
     )
 
-    # fig.show()
     return fig
 
-
-import matplotlib.pyplot as plt
-import matplotlib.colors
-import numpy as np
 
 def get_colors_from_gradient(n, gradient_name='viridis'):
     """
