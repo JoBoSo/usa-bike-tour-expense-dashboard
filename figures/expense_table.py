@@ -13,6 +13,14 @@ expense_table = dash_table.DataTable(
     style_header={
         'color': 'white',
         'backgroundColor': 'rgb(0, 0, 0)',
-        'border': '1px solid pink'
+        'border': '1px solid pink',
+        'position': 'sticky',
+        'top': 0,
+        'zIndex': 1
     },
+    style_table={
+        'height': '200px',
+        'overflow': 'auto'
+    },
+    sort_action='native',
 )
