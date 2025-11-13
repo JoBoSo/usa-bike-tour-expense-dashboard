@@ -1,9 +1,9 @@
 from dash import Dash, dcc, html
-from expense_map import expense_map_fig
-from expense_table import expense_table
-from daily_expenses_bar_chart import daily_expenses_bar_chart_fig
-from expense_category_total_bubble_chart import expense_category_bubble_chart_fig
-from store_type_total_bubble_chart import store_type_total_bubble_chart_fig
+from figures.expense_map import expense_map_fig
+from figures.expense_table import expense_table
+from figures.daily_expenses_bar_chart import daily_expenses_bar_chart_fig
+from figures.category_total_bubble_chart import expense_category_bubble_chart_fig
+from figures.store_type_total_bubble_chart import store_type_total_bubble_chart_fig
 
 app = Dash()
 
