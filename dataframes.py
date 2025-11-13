@@ -15,6 +15,7 @@ def get_expenses(uri: str) -> pl.DataFrame:
     """
     query = """
         SELECT 
+            CAST(day AS INTEGER) AS day,
             CAST(date AS TEXT) AS date,
             CAST(time AS TEXT) AS time,
             COALESCE(CAST(cost_cad AS REAL), 0.0) AS cost_cad,
@@ -36,6 +37,7 @@ def get_expenses(uri: str) -> pl.DataFrame:
         query=query, 
         uri=uri, 
         schema_overrides={
+            "day": pl.Int64,
             "date": pl.Date,
             "time": pl.Time,
             "cost_cad": pl.Float64,
