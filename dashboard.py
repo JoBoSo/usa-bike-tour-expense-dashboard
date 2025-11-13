@@ -21,6 +21,18 @@ app.layout = html.Div(
             children='I biked 4,737 kilometers from the Rocky Mountains to the Sonoran Desert across in 39 days. This dashboard visualizes my expenses along the way.'
         ),
 
+        # Expense Category Bubble Chart
+        html.Div(
+            className='category-bubble-chart-container',
+            children=[
+                html.Div(className='default-fig-title', children='Total Expenses by Category'),
+                html.Div(
+                    className='category-bubble-chart',
+                    children=dcc.Graph(figure=expense_category_bubble_chart_fig),
+                ),
+            ]
+        ),
+
         # Expense Map
         html.Div(
             className='expense-map-container',
@@ -33,18 +45,6 @@ app.layout = html.Div(
             ]
         ),
 
-        # Expense Table
-        html.Div(
-            className='expense-table-container',
-            children=[
-                html.Div(className='default-fig-title', children='Expenses'),
-                html.Div(
-                    className='expense-table',
-                    children=expense_table,
-                ),
-            ]
-        ),
-    
         # Daily Expenses Bar Chart
         html.Div(
             className='daily-expenses-bar-chart-container',
@@ -57,14 +57,14 @@ app.layout = html.Div(
             ]
         ),
 
-        # Expense Category Bubble Chart
+        # Expense Table
         html.Div(
-            className='category-bubble-chart-container',
+            className='expense-table-container',
             children=[
-                html.Div(className='default-fig-title', children='Total Expenses by Category'),
+                html.Div(className='default-fig-title', children='Expenses'),
                 html.Div(
-                    className='category-bubble-chart',
-                    children=dcc.Graph(figure=expense_category_bubble_chart_fig),
+                    className='expense-table',
+                    children=expense_table,
                 ),
             ]
         ),
