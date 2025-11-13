@@ -3,7 +3,7 @@ import dataframes as dfs
 
 fig = px.bar(
     dfs.expenses, 
-    x="date", 
+    x="day", 
     y="cost_cad", 
     color="category",
     hover_name="store_name",
