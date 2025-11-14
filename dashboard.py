@@ -21,6 +21,18 @@ app.layout = html.Div(
             children='I biked 4,737 kilometers from the Rocky Mountains to the Sonoran Desert across in 39 days. This dashboard visualizes my expenses along the way.'
         ),
 
+        # Daily Expenses Bar Chart
+        html.Div(
+            className='daily-expenses-bar-chart-container',
+            children=[
+                html.Div(className='default-fig-title', children='Daily Expenses'),
+                html.Div(
+                    className='daily-expenses-bar-chart',
+                    children=dcc.Graph(figure=daily_expenses_bar_chart_fig),
+                ),
+            ]
+        ),
+
         # Expense Category Bubble Chart
         html.Div(
             className='category-bubble-chart-container',
@@ -42,18 +54,6 @@ app.layout = html.Div(
                     className='expense-map',
                     children=dcc.Graph(figure=expense_map_fig),
                 )
-            ]
-        ),
-
-        # Daily Expenses Bar Chart
-        html.Div(
-            className='daily-expenses-bar-chart-container',
-            children=[
-                html.Div(className='default-fig-title', children='Daily Expenses'),
-                html.Div(
-                    className='daily-expenses-bar-chart',
-                    children=dcc.Graph(figure=daily_expenses_bar_chart_fig),
-                ),
             ]
         ),
 
