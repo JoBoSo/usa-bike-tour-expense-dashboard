@@ -66,14 +66,14 @@ html, body {
     border: 1px solid #524d94;
 }
 
-.daily-expenses-bar-chart-container {
+.daily-expense-chart-container {
     border: 2px solid #524d94;
     border-radius: 7px;
     padding: 5px;
     margin: 20px 0px 20px 0px;
 }
 
-.daily-expenses-bar-chart-container .daily-expenses-bar-chart {
+.daily-expense-chart-container .daily-expense-chart {
     display: flex;
     justify-content: safe center;
     align-items: center; 

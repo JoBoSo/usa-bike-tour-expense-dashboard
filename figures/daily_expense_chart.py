@@ -75,4 +75,4 @@ fig.update_layout(
     dragmode='pan',
 )
 
-daily_expenses_bar_chart_fig = fig
+daily_expense_chart_fig = fig

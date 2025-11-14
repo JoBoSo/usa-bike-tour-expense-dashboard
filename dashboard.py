@@ -1,7 +1,7 @@
 from dash import Dash, dcc, html
 from figures.expense_map import expense_map_fig
 from figures.expense_table import expense_table
-from figures.daily_expenses_bar_chart import daily_expenses_bar_chart_fig
+from figures.daily_expense_chart import daily_expense_chart_fig
 from figures.category_total_bubble_chart import expense_category_bubble_chart_fig
 from figures.store_type_total_bubble_chart import store_type_total_bubble_chart_fig
 
@@ -23,12 +23,12 @@ app.layout = html.Div(
 
         # Daily Expenses Bar Chart
         html.Div(
-            className='daily-expenses-bar-chart-container',
+            className='daily-expense-chart-container',
             children=[
                 html.Div(className='default-fig-title', children='Daily Expenses'),
                 html.Div(
-                    className='daily-expenses-bar-chart',
-                    children=dcc.Graph(figure=daily_expenses_bar_chart_fig),
+                    className='daily-expense-chart',
+                    children=dcc.Graph(figure=daily_expense_chart_fig),
                 ),
             ]
         ),
