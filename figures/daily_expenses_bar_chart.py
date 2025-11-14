@@ -49,11 +49,13 @@ fig.update_layout(
         tickvals=list(range(1, df['day'].max()+1)),
         ticktext=[str(i) for i in range(1, df['day'].max()+1)],
         fixedrange=True,  # Disable panning/zooming on the x-axis
-        autorange=True,    # Ensure the axis range fits the data initially
+        range=[df['day'].min()-0.5, df['day'].max()+0.5],   
     ),
     yaxis=dict(
+        tickmode='array',
+        tickvals=list(range(0, int(daily_total_df['cost_cad'].max()), 50)) + [int(daily_total_df['cost_cad'].max())-(int(daily_total_df['cost_cad'].max())%50)+50],
+        range=[0, int(daily_total_df['cost_cad'].max())+(int(daily_total_df['cost_cad'].max())%50)],
         fixedrange=True,  # Disable panning/zooming on the y-axis
-        autorange=True,    # Ensure the axis range fits the data initially
     ),
     yaxis2=dict(
         title='Cumulative Cost (CAD)',
@@ -61,7 +63,8 @@ fig.update_layout(
         side='right',
         showgrid=False,
         fixedrange=True,  # Disable panning/zooming on the y-axis
-        autorange=True,    # Ensure the axis range fits the data initially
+        tickvals=list(range(0, int(daily_total_df['cost_cad'].sum()), 500)) + [int(daily_total_df['cost_cad'].sum())-(int(daily_total_df['cost_cad'].sum())%500)+500],
+        range=[0, int(daily_total_df['cost_cad'].sum())+(int(daily_total_df['cost_cad'].sum())%500)],
     ),
     legend=dict(
         x=1.08,  # x-coordinate (e.g., 1.1 places it to the right of the plot)
