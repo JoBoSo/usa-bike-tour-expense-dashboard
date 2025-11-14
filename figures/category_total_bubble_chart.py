@@ -165,6 +165,7 @@ def plot_bubble_chart_plotly(df, plot_diameter=500):
         plot_bgcolor='rgba(0,0,0,0)',
         font_color='white',
         font_family='Poppins',
+        dragmode='pan'
     )
 
     return fig
