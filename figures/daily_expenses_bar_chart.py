@@ -53,7 +53,13 @@ fig.update_layout(
     xaxis=dict(
         tickmode='array',
         tickvals=list(range(1, df['day'].max()+1)),
-        ticktext=[str(i) for i in range(1, df['day'].max()+1)]
+        ticktext=[str(i) for i in range(1, df['day'].max()+1)],
+        fixedrange=True,  # Disable panning/zooming on the x-axis
+        autorange=True    # Ensure the axis range fits the data initially
+    ),
+    yaxis=dict(
+        fixedrange=True,  # Disable panning/zooming on the y-axis
+        autorange=True    # Ensure the axis range fits the data initially
     ),
     legend=dict(
         x=1.08,  # x-coordinate (e.g., 1.1 places it to the right of the plot)
@@ -61,7 +67,7 @@ fig.update_layout(
         xanchor="left", # Which part of the legend box anchors to the x-coordinate
         yanchor="top"   # Which part of the legend box anchors to the y-coordinate
     ),
-    dragmode='pan'
+    dragmode='pan',
 )
 
 daily_expenses_bar_chart_fig = fig
