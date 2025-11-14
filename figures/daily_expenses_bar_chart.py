@@ -55,7 +55,7 @@ fig.update_layout(
         tickvals=list(range(1, df['day'].max()+1)),
         ticktext=[str(i) for i in range(1, df['day'].max()+1)],
         fixedrange=True,  # Disable panning/zooming on the x-axis
-        autorange=True    # Ensure the axis range fits the data initially
+        autorange=True,    # Ensure the axis range fits the data initially
     ),
     yaxis=dict(
         fixedrange=True,  # Disable panning/zooming on the y-axis

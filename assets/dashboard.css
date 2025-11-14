@@ -75,7 +75,7 @@ html, body {
 
 .daily-expenses-bar-chart-container .daily-expenses-bar-chart {
     display: flex;
-    justify-content: center;
+    justify-content: safe center;
     align-items: center; 
     overflow: auto;
 }
