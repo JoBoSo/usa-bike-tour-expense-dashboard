@@ -39,12 +39,6 @@ fig.update_layout(
     margin=dict(l=0, r=0, t=0, b=0),
     xaxis_title='Day',
     yaxis_title='Daily Cost (CAD)',
-    yaxis2=dict(
-        title='Cumulative Cost (CAD)',
-        overlaying='y',
-        side='right',
-        showgrid=False
-    ),
     paper_bgcolor='rgba(0,0,0,0)', 
     plot_bgcolor='rgba(0,0,0,0)',
     font_color='white',
@@ -59,7 +53,15 @@ fig.update_layout(
     ),
     yaxis=dict(
         fixedrange=True,  # Disable panning/zooming on the y-axis
-        autorange=True    # Ensure the axis range fits the data initially
+        autorange=True,    # Ensure the axis range fits the data initially
+    ),
+    yaxis2=dict(
+        title='Cumulative Cost (CAD)',
+        overlaying='y',
+        side='right',
+        showgrid=False,
+        fixedrange=True,  # Disable panning/zooming on the y-axis
+        autorange=True,    # Ensure the axis range fits the data initially
     ),
     legend=dict(
         x=1.08,  # x-coordinate (e.g., 1.1 places it to the right of the plot)
