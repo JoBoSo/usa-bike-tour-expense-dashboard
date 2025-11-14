@@ -129,8 +129,9 @@ def plot_bubble_chart_plotly(df, plot_diameter=500):
         # text=chart.labels.astype(str),
         text=df[['label', 'size']]
             .apply(lambda row: 
-                f"<b>{row['label']}</b><br>${row['size']:.0f}" 
-                if row['size'] > 300 else "", 
+                f"<b>{row['label']}</b><br>${row['size']:.0f}" if row['size'] > 300 
+                else f"${row['size']:.0f}" if row['size'] > 20
+                else "", 
                 axis=1
             ),
         textposition='middle center',
