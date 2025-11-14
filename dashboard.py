@@ -23,7 +23,7 @@ app.layout = html.Div(
 
         # Daily Expenses Bar Chart
         html.Div(
-            className='daily-expense-chart-container',
+            className='default-fig-parent-container',
             children=[
                 html.Div(className='default-fig-title', children='Daily Expenses'),
                 html.Div(
@@ -35,7 +35,7 @@ app.layout = html.Div(
 
         # Expense Category Bubble Chart
         html.Div(
-            className='category-bubble-chart-container',
+            className='default-fig-parent-container',
             children=[
                 html.Div(className='default-fig-title', children='Total Expenses by Category'),
                 html.Div(
@@ -47,7 +47,7 @@ app.layout = html.Div(
 
         # Expense Map
         html.Div(
-            className='expense-map-container',
+            className='default-fig-parent-container',
             children=[
                 html.Div(className='default-fig-title', children='Expense Map'),
                 html.Div(
@@ -59,7 +59,7 @@ app.layout = html.Div(
 
         # Expense Table
         html.Div(
-            className='expense-table-container',
+            className='default-fig-parent-container',
             children=[
                 html.Div(className='default-fig-title', children='Expenses'),
                 html.Div(
@@ -68,16 +68,6 @@ app.layout = html.Div(
                 ),
             ]
         ),
-        
-        # html.Div(
-        #     style={
-        #         'display': 'flex',
-        #         'justifyContent': 'center',
-        #         'alignItems': 'center', 
-        #         'border': '2px solid #000',
-        #     },
-        #     children=dcc.Graph(figure=store_type_total_bubble_chart_fig),
-        # ),
 
         html.Div(
             className='footer-container',

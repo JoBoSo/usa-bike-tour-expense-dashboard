@@ -38,55 +38,36 @@ html, body {
     align-items: center; 
 }
 
-.expense-map-container {
-    border: 2px solid #524d94;
-    border-radius: 7px;
-    margin: 20px 0px 20px 0px;
-}
-
-.expense-map-container .expense-map {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    /* border: 2px solid #ffffff; */
-    border-radius: 0px 0px 7px 7px;
-    overflow: hidden;
-}
-
-.expense-table-container {
+.default-fig-parent-container {
     border: 2px solid #524d94;
     border-radius: 7px;
     padding: 5px;
-    margin: 20px 0px 20px 0px;
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
-.expense-table-container .expense-table {
+.default-fig-parent-container .expense-map {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.default-fig-parent-container .expense-table {
     height: 200px;
     overflow: hidden;
     border: 1px solid #524d94;
 }
 
-.daily-expense-chart-container {
-    border: 2px solid #524d94;
-    border-radius: 7px;
-    padding: 5px;
-    margin: 20px 0px 20px 0px;
-}
-
-.daily-expense-chart-container .daily-expense-chart {
+.default-fig-parent-container .daily-expense-chart {
     display: flex;
     justify-content: safe center;
     align-items: center; 
     overflow: auto;
 }
 
-.category-bubble-chart-container {
-    border: 2px solid #524d94;
-    border-radius: 7px;
-    margin: 20px 0px 20px 0px;
-}
-
-.category-bubble-chart-container .category-bubble-chart {
+.default-fig-parent-container .category-bubble-chart {
     display: flex;
     justify-content: center;
     align-items: center; 
