@@ -2,8 +2,8 @@ from dash import Dash, dcc, html
 from figures.expense_map import expense_map_fig
 from figures.expense_table import expense_table
 from figures.daily_expense_chart import daily_expense_chart_fig
-from figures.category_total_bubble_chart import expense_category_bubble_chart_fig
-from figures.store_type_total_bubble_chart import store_type_total_bubble_chart_fig
+from figures.total_spend_bubble_chart import expense_category_bubble_chart_fig
+import callbacks
 
 app = Dash()
 
@@ -37,10 +37,25 @@ app.layout = html.Div(
         html.Div(
             className='default-fig-parent-container',
             children=[
-                html.Div(className='default-fig-title', children='Total Expenses by Category'),
+                html.Div(className='default-fig-title', children='Total Spend'),
+                html.Div(
+                    style={
+                        "display": "flex",
+                        "gap": "10px",
+                        "justifyContent": "center",
+                        "marginBottom": "10px"
+                    },
+                    children=[
+                        html.Button("Expense Category", id="btn-category", n_clicks=0, className='bubble-chart-btn'),
+                        html.Button("Store Type", id="btn-store-type", n_clicks=0, className='bubble-chart-btn'),
+                    ]
+                ),
                 html.Div(
                     className='category-bubble-chart',
-                    children=dcc.Graph(figure=expense_category_bubble_chart_fig),
+                    children=dcc.Graph(
+                        id='category-bubble-chart', 
+                        figure=expense_category_bubble_chart_fig(label='category')  # initial chart
+                    ),
                 ),
             ]
         ),

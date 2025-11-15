@@ -2,7 +2,10 @@ import numpy as np
 import pandas as pd
 import polars as pl
 import plotly.graph_objects as go
-import dataframes as dfs
+import matplotlib.pyplot as plt
+import matplotlib.colors
+import dataframes as dfs 
+
 
 class BubbleChartPlotly:
     def __init__(self, labels, area, colors, bubble_spacing=10, plot_diameter=500):
@@ -94,6 +97,15 @@ class BubbleChartPlotly:
         })
 
 
+def get_colors_from_gradient(n, gradient_name='viridis'):
+    try:
+        cmap = plt.colormaps[gradient_name]
+    except KeyError:
+        cmap = plt.colormaps['viridis']
+    gradient_values = np.linspace(0, 1, n)
+    colors = [matplotlib.colors.to_hex(cmap(i)) for i in gradient_values]
+    return colors
+
 def plot_bubble_chart_plotly(df, plot_diameter=500):
     chart = BubbleChartPlotly(
         labels=df['label'],
@@ -107,81 +119,57 @@ def plot_bubble_chart_plotly(df, plot_diameter=500):
     df_bubbles['size_px'] = df_bubbles['radius'] * 2
 
     fig = go.Figure()
+
     fig.add_trace(go.Scatter(
         x=df_bubbles['x'],
         y=df_bubbles['y'],
         mode='markers+text',
         marker=dict(
             size=df_bubbles['size_px'],
-            color=df_bubbles['color'],     
+            color=df_bubbles['color'],
             sizemode='diameter',
             opacity=0.9,
+            line=dict(color='white')
         ),
-        # text=df_bubbles['size'].round(2).astype(str),
-        text=chart.area.astype(int).astype(str),
+        texttemplate=[
+            f"<b>{l}</b><br>${s:.0f}" if s > 300 else
+            f"${s:.0f}" if s > 20 else
+            " "
+            for l, s in zip(df["label"], df["size"])
+        ],
         textposition='middle center',
         textfont=dict(
-            size=np.clip(df_bubbles['size'] / df_bubbles['size'].max() * 20, 8, 22)
+            size=np.clip(df_bubbles['size']/350-(1.1*len(df_bubbles['label'])), 8, 24),
+            color='white'
         ),
-        hovertemplate=(
-            '<b>%{customdata[0]}</b><br>' + 
-            'Value: %{text}' +               
-            '<extra></extra>'               
-        ),
-        customdata=df_bubbles[['label']],
+        customdata=np.stack([df['label'].values, df['size'].values], axis=-1),
+        hovertemplate='<b>%{customdata[0]}</b><br>$%{customdata[1]:.0f}<extra></extra>',
     ))
 
     fig.update_layout(
-        title='Total Expenses by Store Type',
-        template='plotly_dark',
         xaxis=dict(visible=False),
         yaxis=dict(visible=False),
-        margin=dict(l=0, r=0, t=40, b=0),
+        margin=dict(l=0, r=0, t=0, b=0),
         height=plot_diameter,
-        width=plot_diameter
+        width=plot_diameter,
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)',
+        font_color='white',
+        font_family='Poppins',
+        dragmode='pan'
     )
 
-    # fig.show()
     return fig
 
 
-import matplotlib.pyplot as plt
-import matplotlib.colors
-import numpy as np
-
-def get_colors_from_gradient(n, gradient_name='viridis'):
+def expense_category_bubble_chart_fig(df=dfs.expense_category_totals, label='category'):
     """
-    Generates n distinct hex code colors from a named Matplotlib gradient 
-    (colormap).
-    
-    Args:
-        n (int): The number of colors to generate.
-        gradient_name (str): The name of the Matplotlib colormap (e.g., 'viridis',
-                             'plasma', 'hsv', 'Dark2', 'Set1').
-                             
-    Returns:
-        list: A list of hex color strings.
+    Create a bubble chart figure for expense categories or store types.
     """
-    try:
-        # Get the colormap object
-        cmap = plt.colormaps[gradient_name]
-    except KeyError:
-        print(f"Colormap '{gradient_name}' not found. Using 'viridis' instead.")
-        cmap = plt.colormaps['viridis']
-
-    # Generate evenly spaced values from 0 to 1
-    # We use linspace to get n points across the gradient
-    gradient_values = np.linspace(0, 1, n)
-    
-    # Get the colors from the colormap and convert to hex
-    colors = [matplotlib.colors.to_hex(cmap(i)) for i in gradient_values]
-    
-    return colors
-
-n_bubbles = (dfs.store_type_totals).height
-df = pl.DataFrame({
-    'label': dfs.store_type_totals['store_type'],
-    'size': dfs.store_type_totals['total_cost_cad'],
-    'color': get_colors_from_gradient(n_bubbles, gradient_name='rainbow')
-}).to_pandas()
-store_type_total_bubble_chart_fig = plot_bubble_chart_plotly(df, plot_diameter=500)
+    n_bubbles = df.height
+    df2 = pl.DataFrame({
+        'label': df[label],
+        'size': df['total_cost_cad'],
+        'color': get_colors_from_gradient(n_bubbles, gradient_name='rainbow')
+    }).to_pandas()
+    return plot_bubble_chart_plotly(df2, plot_diameter=500)

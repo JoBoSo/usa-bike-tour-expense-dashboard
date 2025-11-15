@@ -74,6 +74,28 @@ html, body {
     overflow: auto;
 }
 
+.bubble-chart-btn {
+    padding: 4px 8px;
+    border: 1px solid #524d94;
+    background-color: #040c24;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.bubble-chart-btn:hover {
+    background-color: #1a2550;
+}
+
+.bubble-chart-btn.active {
+    background-color: #524d94;   /* highlighted */
+    color: white;
+    border-color: #857df0;
+    font-weight: bold;
+}
+
 .footer-container {
     margin: 30px 0px 10px 0px;
     text-align: center;
