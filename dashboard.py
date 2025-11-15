@@ -3,6 +3,11 @@ from figures.expense_map import expense_map_fig
 from figures.expense_table import expense_table
 from figures.daily_expense_chart import daily_expense_chart_fig
 from figures.total_spend_bubble_chart import expense_category_bubble_chart_fig
+from figures.indicators import (
+    num_days_ind_fig, total_distance_ind_fig, total_spend_ind_fig, 
+    avg_daily_spend_ind_fig, num_purchases_ind_fig, avg_daily_distance_ind_fig, 
+    avg_daily_purchases_ind_fig
+)
 import callbacks
 
 app = Dash()
@@ -19,6 +24,24 @@ app.layout = html.Div(
         html.Div(
             className='explanation',
             children='I biked 4,737 kilometers from the Rocky Mountains to the Sonoran Desert across in 39 days. This dashboard visualizes my expenses along the way.'
+        ),
+
+        html.Div(
+            className='default-fig-parent-container',
+            children=[
+                html.Div(
+                    className='indicators',
+                    children=[
+                        dcc.Graph(className='indicator', figure=num_days_ind_fig),
+                        dcc.Graph(className='indicator', figure=total_distance_ind_fig),
+                        dcc.Graph(className='indicator', figure=avg_daily_distance_ind_fig),
+                        dcc.Graph(className='indicator', figure=total_spend_ind_fig),
+                        dcc.Graph(className='indicator', figure=avg_daily_spend_ind_fig),
+                        dcc.Graph(className='indicator', figure=num_purchases_ind_fig),
+                        dcc.Graph(className='indicator', figure=avg_daily_purchases_ind_fig),
+                    ]
+                ),
+            ],
         ),
 
         # Daily Expenses Bar Chart

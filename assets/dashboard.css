@@ -46,6 +46,21 @@ html, body {
     max-width: 1200px;
 }
 
+.default-fig-parent-container .indicators {
+    display: flex;
+    justify-content: safe center;
+    align-items: center; 
+    overflow: auto;
+}
+
+.default-fig-parent-container .indicators .indicator {
+    margin: 0px 2px;
+    padding: 2.2px;
+    border: 2px solid #524d94;
+    border-radius: 7px;
+    overflow: visible;
+}
+
 .default-fig-parent-container .expense-map {
     display: flex;
     justify-content: center;
