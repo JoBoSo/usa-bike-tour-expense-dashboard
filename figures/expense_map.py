@@ -20,9 +20,9 @@ color_map = {
 fig = go.Figure(go.Scattermap(
     lat=df['latitude'],
     lon=df['longitude'],
-    mode='markers', # Or 'lines', 'lines+markers'
+    mode='markers',
     marker=dict(
-        size=np.maximum(np.log(df['cost_cad'])*2.5, 4), 
+        size=np.maximum(np.log(df['cost_cad'])*2.7, 4), 
         color=df['category'].map(color_map),
     ),
     text=df[['store_name', 'cost_cad', 'category']]
