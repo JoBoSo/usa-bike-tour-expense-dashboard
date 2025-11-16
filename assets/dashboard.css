@@ -7,6 +7,10 @@ html, body {
     width: 100%;
 }
 
+.modebar {
+    display: none !important; /* Hide Plotly modebar */
+}
+
 .dashboard {
     background-color: #040c24;
     font-family: 'Poppins', sans-serif;
