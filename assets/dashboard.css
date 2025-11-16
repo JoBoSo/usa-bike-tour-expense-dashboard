@@ -50,14 +50,14 @@ html, body {
     max-width: 1200px;
 }
 
-.default-fig-parent-container .indicators {
+.default-fig-parent-container .default-fig-container {
     display: flex;
     justify-content: safe center;
     align-items: center; 
     overflow: auto;
 }
 
-.default-fig-parent-container .indicators .indicator {
+.default-fig-parent-container .default-fig-container .indicator {
     margin: 0px 2px;
     padding: 2.2px;
     border: 2px solid #524d94;
@@ -77,13 +77,6 @@ html, body {
     height: 200px;
     overflow: hidden;
     border: 1px solid #524d94;
-}
-
-.default-fig-parent-container .daily-expense-chart {
-    display: flex;
-    justify-content: safe center;
-    align-items: center; 
-    overflow: auto;
 }
 
 .default-fig-parent-container .category-bubble-chart {

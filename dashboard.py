@@ -8,6 +8,7 @@ from figures.indicators import (
     avg_daily_spend_ind_fig, num_purchases_ind_fig, avg_daily_distance_ind_fig, 
     avg_daily_purchases_ind_fig
 )
+from figures.histogram import histogram_fig
 import callbacks
 
 app = Dash()
@@ -30,7 +31,7 @@ app.layout = html.Div(
             className='default-fig-parent-container',
             children=[
                 html.Div(
-                    className='indicators',
+                    className='default-fig-container',
                     children=[
                         dcc.Graph(className='indicator', figure=num_days_ind_fig),
                         dcc.Graph(className='indicator', figure=total_distance_ind_fig),
@@ -50,7 +51,7 @@ app.layout = html.Div(
             children=[
                 html.Div(className='default-fig-title', children='Daily Expenses'),
                 html.Div(
-                    className='daily-expense-chart',
+                    className='default-fig-container',
                     children=dcc.Graph(figure=daily_expense_chart_fig),
                 ),
             ]
@@ -80,6 +81,18 @@ app.layout = html.Div(
                         figure=expense_category_bubble_chart_fig(label='category')  # initial chart
                     ),
                 ),
+            ]
+        ),
+
+        # Histogram
+        html.Div(
+            className='default-fig-parent-container',
+            children=[
+                html.Div(className='default-fig-title', children='Distribution of Purchase Amounts'),
+                html.Div(
+                    className='default-fig-container',
+                    children=dcc.Graph(figure=histogram_fig),
+                )
             ]
         ),
 
