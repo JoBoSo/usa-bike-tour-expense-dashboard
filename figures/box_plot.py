@@ -36,7 +36,14 @@ fig.update_layout(
         'yanchor': 'top',
         'font': {'weight': "bold", "size": 20}
     },
-    yaxis_title='Purchase Amount (CAD)',
+    xaxis=dict(
+        fixedrange=True,
+        title='Expense Category'
+    ),
+    yaxis=dict(
+        fixedrange=True,
+        title='Purchase Amount (CAD)'
+    ),
     paper_bgcolor='rgba(0,0,0,0)',
     plot_bgcolor='rgba(0,0,0,0)',
     font=dict(
