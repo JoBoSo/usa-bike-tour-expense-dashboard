@@ -9,6 +9,7 @@ from figures.indicators import (
     avg_daily_purchases_ind_fig
 )
 from figures.histogram import histogram_fig
+from figures.box_plot import box_plot_fig
 import callbacks
 
 app = Dash()
@@ -92,6 +93,18 @@ app.layout = html.Div(
                 html.Div(
                     className='default-fig-container',
                     children=dcc.Graph(figure=histogram_fig),
+                )
+            ]
+        ),
+
+        # Box Plot
+        html.Div(
+            className='default-fig-parent-container',
+            children=[
+                html.Div(className='default-fig-title', children='Shape of Purchase Amounts by Category (n≥5)'),
+                html.Div(
+                    className='default-fig-container',
+                    children=dcc.Graph(figure=box_plot_fig),
                 )
             ]
         ),
