@@ -34,6 +34,7 @@ fig.update_layout(
     margin=dict(l=0, r=0, t=0, b=0),
     width=900,
     height=400,
+    dragmode='pan',
 )
 
 histogram_fig = fig

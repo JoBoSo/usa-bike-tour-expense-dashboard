@@ -48,6 +48,7 @@ fig.update_layout(
     width=1100,
     height=500,
     boxgap=0.0,
+    dragmode='pan',
 )
 
 fig.update_yaxes(
