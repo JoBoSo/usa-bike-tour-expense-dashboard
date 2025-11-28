@@ -1,5 +1,5 @@
 # Western USA Bike Tour Expense Dashboard
-This dashboard summarizes my expenses for my 39 day, 4737 km bike tour from the Rocky Mountains to the Sonoran Desert.
+This dashboard summarizes expenses I incurred on my 39 day, 4737 km bike tour across the western USA, from the Rocky Mountains to the Sonoran Desert.
 
 [View my dashboard](https://westernusabiketourexpensedash.pythonanywhere.com/)
 
