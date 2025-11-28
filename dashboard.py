@@ -10,6 +10,7 @@ from figures.indicators import (
 )
 from figures.histogram import histogram_fig
 from figures.box_plot import box_plot_fig
+import callbacks # required for access to callbacks
 
 app = Dash()
 
