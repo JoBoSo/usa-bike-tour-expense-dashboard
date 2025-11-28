@@ -1,16 +1,17 @@
-import polars as pl
+import pandas as pd
 import plotly.graph_objects as go
-import dataframes as dfs 
+import dataframes as dfs
 
 df = dfs.expenses
 
-x_col="category"
-# x_col="store_type"
+x_col = "category"
+# x_col = "store_type"
 
 # Filter to only include store_type with 5+ data points
-category_counts = df.group_by(x_col).len()
-valid_categories = category_counts.filter(pl.col("len") >= 5)[x_col]
-df_filtered = df.filter(pl.col(x_col).is_in(valid_categories))
+category_counts = df.groupby(x_col).size().reset_index(name="len")
+valid_categories = category_counts[category_counts["len"] >= 5][x_col]
+
+df_filtered = df[df[x_col].isin(valid_categories)]
 
 fig = go.Figure()
 

@@ -1,10 +1,9 @@
 import numpy as np
 import pandas as pd
-import polars as pl
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import matplotlib.colors
-import dataframes as dfs 
+import dataframes as dfs
 
 
 class BubbleChartPlotly:
@@ -166,10 +165,12 @@ def expense_category_bubble_chart_fig(df=dfs.expense_category_totals, label='cat
     """
     Create a bubble chart figure for expense categories or store types.
     """
-    n_bubbles = df.height
-    df2 = pl.DataFrame({
+    n_bubbles = len(df)
+
+    df2 = pd.DataFrame({
         'label': df[label],
         'size': df['total_cost_cad'],
         'color': get_colors_from_gradient(n_bubbles, gradient_name='rainbow')
-    }).to_pandas()
+    })
+
     return plot_bubble_chart_plotly(df2, plot_diameter=500)

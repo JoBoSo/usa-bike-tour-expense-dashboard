@@ -1,10 +1,12 @@
 import dataframes as dfs
 from dash import dash_table
 
-df = (dfs.expenses).drop(['latitude', 'longitude'])
+df = dfs.expenses
+
+df = df.drop(columns=['latitude', 'longitude'])
 
 expense_table = dash_table.DataTable(
-    data=(df).to_dicts(),
+    data=df.to_dict(orient="records"),
     style_data={
         'color': 'white',
         'backgroundColor': 'rgb(20, 20, 20)', 

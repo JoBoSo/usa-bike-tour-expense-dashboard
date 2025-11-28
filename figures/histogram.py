@@ -1,6 +1,6 @@
-import polars as pl
+import pandas as pd
 import plotly.graph_objects as go
-import dataframes as dfs 
+import dataframes as dfs
 
 df = dfs.expenses
 

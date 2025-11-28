@@ -1,31 +1,32 @@
-import polars as pl
+import pandas as pd
 import plotly.graph_objects as go
-import dataframes as dfs 
+import dataframes as dfs
 
-df=dfs.expenses
+df = dfs.expenses
 
-# totals
-total_spend=df.select(pl.col("cost_cad").sum()).item()
-num_days=df.select(pl.col("day").max()).item()
-num_purchases=df.height
+# --- Totals ---
+total_spend = df["cost_cad"].sum()
+num_days = df["day"].max()
+num_purchases = len(df)
 
-# daily avgs
-avg_daily_spend=total_spend/num_days
-avg_num_purchases=num_purchases/num_days
+# --- Daily averages ---
+avg_daily_spend = total_spend / num_days
+avg_num_purchases = num_purchases / num_days
 
-# 100 km avgs
-# avg_spend_per_100km=total_spend/4737*100
-# avg_purchases_per_100km=num_purchases/4737*100
+# If needed later:
+# avg_spend_per_100km = total_spend / 4737 * 100
+# avg_purchases_per_100km = num_purchases / 4737 * 100
+
 
 def create_indicator(value, prefix="", suffix="", title="", decimals=0):
     fig = go.Figure()
 
     fig.add_trace(go.Indicator(
-        mode = "number",
-        value = value,
-        number = {
-            'prefix': prefix, 
-            'suffix': suffix, 
+        mode="number",
+        value=value,
+        number={
+            'prefix': prefix,
+            'suffix': suffix,
             'valueformat': f',.{decimals}f',
             'font': {
                 'family': "Poppins",
@@ -33,16 +34,16 @@ def create_indicator(value, prefix="", suffix="", title="", decimals=0):
                 'color': "white",
             },
         },
-        domain = {'x': [0, 1], 'y': [0, 0.6]},
+        domain={'x': [0, 1], 'y': [0, 0.6]},
     ))
 
     fig.update_layout(
         title={
-            'text': title, 
-            'x':0.5, 
-            'xanchor': 'center', 
+            'text': title,
+            'x': 0.5,
+            'xanchor': 'center',
             'y': 0.7,
-            'yanchor': 'middle', 
+            'yanchor': 'middle',
             'font': {'weight': "bold", "size": 16}
         },
         paper_bgcolor='rgba(0,0,0,0)',
@@ -58,10 +59,12 @@ def create_indicator(value, prefix="", suffix="", title="", decimals=0):
 
     return fig
 
-num_days_ind_fig = create_indicator(num_days, prefix="", suffix="", title="Days")
-total_distance_ind_fig = create_indicator(4737, prefix="", suffix=" km", title="Distance")
+
+# Figures
+num_days_ind_fig = create_indicator(num_days, title="Days")
+total_distance_ind_fig = create_indicator(4737, suffix=" km", title="Distance")
 total_spend_ind_fig = create_indicator(total_spend, prefix="$", suffix=" CAD", title="Cost")
-num_purchases_ind_fig = create_indicator(num_purchases, prefix="", suffix="", title="Purchases")
-avg_daily_distance_ind_fig = create_indicator(4737/num_days, prefix="", suffix=" km", title="Distance/Day")
+num_purchases_ind_fig = create_indicator(num_purchases, title="Purchases")
+avg_daily_distance_ind_fig = create_indicator(4737/num_days, suffix=" km", title="Distance/Day")
 avg_daily_spend_ind_fig = create_indicator(avg_daily_spend, prefix="$", suffix=" CAD", title="Cost/Day")
-avg_daily_purchases_ind_fig = create_indicator(avg_num_purchases, prefix="", suffix="", title="Purchases/Day", decimals=1)
+avg_daily_purchases_ind_fig = create_indicator(avg_num_purchases, title="Purchases/Day", decimals=1)

@@ -2,7 +2,7 @@ import plotly.graph_objects as go
 import dataframes as dfs
 import numpy as np
 
-df = dfs.expenses.to_pandas()
+df = dfs.expenses
 
 color_map = {
     'bike maintenance': '#CCFF00',
