@@ -6,6 +6,7 @@ This dashboard summarizes my expenses for my 39 day, 4737 km bike tour from the 
 ## Dev Notes
 
 Hosted on https://westernusabiketourexpensedash.pythonanywhere.com/
+
 TinyURL link: https://tinyurl.com/bike-tour-expense-dashboard
 
 ### Handy commands
@@ -14,11 +15,10 @@ TinyURL link: https://tinyurl.com/bike-tour-expense-dashboard
     1. install libraries in `requirements.txt`
     2. run `dashboard.py` to start dev server
 
-### To-do
+### Potential Additions
 - daily and total metrics broken out by category/store type
 - button to switch between stacked bar and multiple bar chart
-- add dashboard page to show other non-financial trip metrics - distance, speed, moving time
+- add page to show other non-financial trip metrics - distance, speed, moving time
 - put totals on top of stacked bar chart
-- histograms of spend by category/store type
-- hover text on the cum line plot
-- break out metrics by state/day
+- edit hover text on the cum. line plot
+- show metrics by state/region on a per day basis
